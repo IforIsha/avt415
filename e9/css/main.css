@@ -1,3 +1,84 @@
 body {
-  background-color: black;
+position: relative;
+left: 10px;
+}
+
+
+.window {
+width: 20px;
+height: 20px;
+background: #ffd966;
+position: absolute;
+top: 20px;
+left: 30px;
+border-radius: 4px;
+}
+
+
+.pumpkin {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+width: 80px;
+height: 60px;
+background: orange;
+border-radius: 50% / 60%;
+box-shadow: inset -8px 0 0 rgba(0,0,0,0.2);
+}
+
+
+.stem {
+position: absolute;
+top: -10px;
+left: 50%;
+width: 10px;
+height: 15px;
+background: #2d1b00;
+border-radius: 2px;
+transform: translateX(-50%);
+}
+
+
+.eyes::before, .eyes::after {
+content: '';
+position: absolute;
+top: 15px;
+width: 10px;
+height: 10px;
+background: #000;
+border-radius: 50%;
+}
+
+
+.eyes::before { left: 20px; }
+.eyes::after { right: 20px; }
+
+
+.mouth {
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+width: 30px;
+height: 6px;
+background: #000;
+border-radius: 3px;
+}
+
+
+.caption {
+position: absolute;
+bottom: 5px;
+width: 100%;
+text-align: center;
+font-size: 14px;
+}
+
+
+@media (max-width: 400px) {
+.scene { width: 200px; height: 200px; }
+.moon { width: 40px; height: 40px; }
+.house { bottom: 40px; }
+.pumpkin { width: 60px; height: 45px; }
 }
