@@ -40,6 +40,130 @@ body {
   left: -10px;
 }
 
+.cloud {
+  position: absolute;
+  background: #999;
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background: #999;
+  border-radius: 50%;
+}
+
+.cloud1 {
+  top: 80px;
+  left: 10%;
+  width: 120px;
+  height: 60px;
+  animation-delay: 0s;
+}
+.cloud1::before {
+  width: 60px;
+  height: 60px;
+  top: -20px;
+  left: 20px;
+}
+.cloud1::after {
+  width: 80px;
+  height: 80px;
+  top: -10px;
+  right: 15px;
+}
+
+.cloud2 {
+  top: 120px;
+  left: 60%;
+  width: 150px;
+  height: 70px;
+  animation-delay: 5s;
+}
+.cloud2::before {
+  width: 80px;
+  height: 80px;
+  top: -25px;
+  left: 30px;
+}
+.cloud2::after {
+  width: 60px;
+  height: 60px;
+  top: -15px;
+  right: 20px;
+}
+
+.cloud3 {
+  top: 180px;
+  left: 30%;
+  width: 100px;
+  height: 50px;
+  opacity: 0.7;
+  animation-delay: 10s;
+}
+.cloud3::before {
+  width: 50px;
+  height: 50px;
+  top: -15px;
+  left: 20px;
+}
+.cloud3::after {
+  width: 70px;
+  height: 70px;
+  top: -10px;
+  right: 10px;
+}
+
+
+.tree {
+  position: absolute;
+  bottom: 150px;
+  right: 100px;
+  width: 35px;
+  height: 180px;
+}
+
+.trunk {
+  width: 35px;
+  height: 180px;
+  background: #2a1b0a;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 0;
+}
+
+.branch {
+  position: absolute;
+  width: 12px;
+  height: 70px;
+  background: #2a1b0a;
+  border-radius: 4px;
+  transform-origin: bottom center;
+}
+
+.branch1 {
+  bottom: 110px;
+  left: -35px;
+  transform: rotate(-35deg);
+}
+
+.branch2 {
+  bottom: 90px;
+  right: -35px;
+  transform: rotate(35deg);
+}
+
+.branch3 {
+  bottom: 140px;
+  left: -25px;
+  transform: rotate(-20deg);
+}
+
+
+
+
 .body {
   width: 180px;
   height: 100px;
@@ -98,10 +222,13 @@ body {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 10px;
+  width: 70px;
+  height: 25px;
   background: #000;
-  border-radius: 5px;
+  clip-path: polygon(
+    0% 60%, 10% 20%, 20% 60%, 30% 20%, 40% 60%, 
+    50% 20%, 60% 60%, 70% 20%, 80% 60%, 90% 20%, 100% 60%
+  );
 }
 
 .caption {
