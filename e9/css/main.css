@@ -15,66 +15,66 @@ body {
   position: absolute;
   top: 40px;
   right: 60px;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background: #f5f3ce;
   border-radius: 50%;
 }
 
 .house {
   position: absolute;
-  bottom: 150px;
-  left: 25%;
-  width: 120px;
-  height: 120px;
+  bottom: 160px;
+  left: 18%;
+  width: 180px;
+  height: 150px;
 }
 
 .roof {
   width: 0;
   height: 0;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 45px solid #333;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #333;
   position: absolute;
-  top: -45px;
+  top: -70px;
   left: -10px;
 }
 
 .body {
-  width: 120px;
-  height: 80px;
+  width: 180px;
+  height: 100px;
   background: #222;
   position: relative;
 }
 
 .window {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   background: #ffd966;
   position: absolute;
-  top: 25px;
-  left: 45px;
+  top: 30px;
+  left: 70px;
   border-radius: 4px;
 }
 
 .pumpkin {
   position: absolute;
-  bottom: 80px;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
-  height: 75px;
+  width: 150px;
+  height: 110px;
   background: orange;
   border-radius: 50% / 60%;
-  box-shadow: inset -8px 0 0 rgba(0,0,0,0.2);
+  box-shadow: inset -10px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .stem {
   position: absolute;
-  top: -12px;
+  top: -15px;
   left: 50%;
-  width: 12px;
-  height: 18px;
+  width: 15px;
+  height: 25px;
   background: #2d1b00;
   border-radius: 2px;
   transform: translateX(-50%);
@@ -84,40 +84,40 @@ body {
 .eyes::after {
   content: '';
   position: absolute;
-  top: 20px;
-  width: 12px;
-  height: 12px;
+  top: 25px;
+  width: 18px;
+  height: 18px;
   background: #000;
   border-radius: 50%;
 }
 
-.eyes::before { left: 25px; }
-.eyes::after { right: 25px; }
+.eyes::before { left: 35px; }
+.eyes::after { right: 35px; }
 
 .mouth {
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 40px;
-  height: 8px;
+  width: 60px;
+  height: 10px;
   background: #000;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .caption {
   position: absolute;
-  bottom: 25px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   color: white;
 }
 
 @media (max-width: 400px) {
   .moon { width: 50px; height: 50px; }
-  .house { bottom: 100px; width: 80px; height: 80px; }
-  .pumpkin { width: 70px; height: 50px; bottom: 60px; }
-  .caption { font-size: 14px; bottom: 15px; }
+  .house { bottom: 100px; width: 100px; height: 80px; }
+  .pumpkin { width: 80px; height: 60px; bottom: 70px; }
+  .caption { font-size: 14px; bottom: 25px; }
 }
