@@ -66,7 +66,6 @@ body {
   height: 110px;
   background: orange;
   border-radius: 50% / 60%;
-  box-shadow: inset -10px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .stem {
